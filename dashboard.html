@@ -10,10 +10,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom CSS file  -->
     <link rel="stylesheet" href="./styles/style.css">
+   <!-- Font Awosome -->
+   <script src="https://kit.fontawesome.com/b435c73b55.js" crossorigin="anonymous"></script>
 </head>
 <body class="body-container flex">
     <header class="header-container max-h-screen bg-black w-3/12">
-        <h3 class="text-4xl text-white px-6 pt-12 font-bold oswald">OnlineBank</h3>
+        <h3 class="text-4xl text-white px-6 pt-12 font-bold oswald"><i class="fa-solid fa-building-columns"></i> OnlineBank</h3>
         <ul class="text-white text-xl px-6 mt-10">
             <li class="py-1 hover:underline hover:text-blue-700"><a href="">Overview</a></li>
             <li class="py-1 hover:underline hover:text-blue-700"><a href="">Balance</a></li>
@@ -30,15 +32,15 @@
         <section class="mt-6 grid grid-cols-3 gap-8">
             <div class="total-balence-container px-6 py-6 bg-white rounded">
                 <h4 class="text-2xl font-medium pb-3">Total Balence</h4>
-                <h2 class="text-5xl font-bold">$<span id="total-balence">257</span></h2>
+                <h2 class="text-5xl font-bold">$<span id="total-balence">505</span></h2>
             </div>
             <div class="total-balence-container px-6 py-6 bg-white rounded">
                 <h4 class="text-2xl font-medium pb-3">Deposit</h4>
-                <h2 class="text-5xl font-bold">$<span id="deposit-total">00</span></h2>
+                <h2 class="text-5xl font-bold">$<span id="deposit-total">980</span></h2>
             </div>
             <div class="total-balence-container px-6 py-6 bg-white rounded">
                 <h4 class="text-2xl font-medium pb-3">Withdraw</h4>
-                <h2 class="text-5xl font-bold">$<span id="withdraw-total">00</span></h2>
+                <h2 class="text-5xl font-bold">$<span id="withdraw-total">475</span></h2>
             </div>
         </section>
         <!-- Deposit & Withdraw input Section -->
@@ -55,31 +57,32 @@
             </div>
         </section>
         <section class="mt-10">
+            <h2 class="text-xl font-medium">Transtions History</h2>
             <div class="overflow-x-auto">
                 <table class="table">
                   <!-- head -->
                   <thead class="bg-blue-200">
-                    <tr>
+                    <tr class="text-base">
                       <th>SL</th>
-                      <th>Name</th>
-                      <th>Job</th>
-                      <th>Favorite Color</th>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <!-- row 1 -->
                     <tr class="bg-base-200">
                       <th>1</th>
-                      <td>Cy Ganderton</td>
-                      <td>Quality Control Specialist</td>
-                      <td>Blue</td>
+                      <td>Deposit</td>
+                      <td>980</td>
+                      <td>Completed</td>
                     </tr>
                     <!-- row 2 -->
                     <tr>
                       <th>2</th>
-                      <td>Hart Hagerty</td>
-                      <td>Desktop Support Technician</td>
-                      <td>Purple</td>
+                      <td>Withdraw</td>
+                      <td>475</td>
+                      <td>Completed</td>
                     </tr>
                 
                   </tbody>
