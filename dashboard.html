@@ -22,7 +22,7 @@
             <li class="py-1 hover:underline hover:text-blue-700"><a href="">Settings</a></li>
         </ul>
     </header>
-    <main class="max-h-screen w-9/12 p-10 bg-gray-100">
+    <main class="max-h-screen overflow-scroll w-9/12 p-10 bg-gray-100">
         <section>
             <h2 class="text-2xl font-medium oswald">Hello, there</h2>
         </section>
@@ -30,37 +30,37 @@
         <section class="mt-6 grid grid-cols-3 gap-8">
             <div class="total-balence-container px-6 py-6 bg-white rounded">
                 <h4 class="text-2xl font-medium pb-3">Total Balence</h4>
-                <h2 class="text-5xl font-bold">$<span>257</span></h2>
+                <h2 class="text-5xl font-bold">$<span id="total-balence">257</span></h2>
             </div>
             <div class="total-balence-container px-6 py-6 bg-white rounded">
                 <h4 class="text-2xl font-medium pb-3">Deposit</h4>
-                <h2 class="text-5xl font-bold">$<span>00</span></h2>
+                <h2 class="text-5xl font-bold">$<span id="deposit-total">00</span></h2>
             </div>
             <div class="total-balence-container px-6 py-6 bg-white rounded">
                 <h4 class="text-2xl font-medium pb-3">Withdraw</h4>
-                <h2 class="text-5xl font-bold">$<span>00</span></h2>
+                <h2 class="text-5xl font-bold">$<span id="withdraw-total">00</span></h2>
             </div>
         </section>
         <!-- Deposit & Withdraw input Section -->
         <section class="grid grid-cols-2 gap-8 mt-8">
             <div class="bg-blue-400 rounded px-8 py-8">
                 <h2 class="text-white font-medium text-xl">Please Deposit</h2>
-                <input class="px-4 py-2 rounded block w-full my-3" type="text" placeholder="$ 00">
-                <button class="bg-slate-700 py-2 px-8 text-white text-lg rounded hover:bg-black">Submit</button>
+                <input id="deposit-input" class="px-4 py-2 rounded block w-full my-3" type="text" placeholder="$ 00">
+                <button id="deposit-btn" class="bg-slate-700 py-2 px-8 text-white text-lg rounded hover:bg-black">Submit</button>
             </div>
             <div class="bg-blue-400 rounded px-8 py-8">
                 <h2 class="text-white font-medium text-xl">Please Withdraw</h2>
-                <input class="px-4 py-2 rounded block w-full my-3" type="text" placeholder="$ 00">
-                <button class="bg-slate-700 py-2 px-8 text-white text-lg rounded hover:bg-black">Submit</button>
+                <input id="withdraw-input" class="px-4 py-2 rounded block w-full my-3" type="text" placeholder="$ 00">
+                <button id="withdraw-btn" class="bg-slate-700 py-2 px-8 text-white text-lg rounded hover:bg-black">Submit</button>
             </div>
         </section>
         <section class="mt-10">
             <div class="overflow-x-auto">
                 <table class="table">
                   <!-- head -->
-                  <thead>
+                  <thead class="bg-blue-200">
                     <tr>
-                      <th></th>
+                      <th>SL</th>
                       <th>Name</th>
                       <th>Job</th>
                       <th>Favorite Color</th>
@@ -87,5 +87,8 @@
               </div>
         </section>
     </main>
+
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
 </body>
 </html>
