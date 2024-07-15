@@ -11,7 +11,81 @@
     <!-- Custom CSS file  -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    
+<body class="body-container flex">
+    <header class="header-container max-h-screen bg-black w-3/12">
+        <h3 class="text-4xl text-white px-6 pt-12 font-bold oswald">OnlineBank</h3>
+        <ul class="text-white text-xl px-6 mt-10">
+            <li class="py-1 hover:underline hover:text-blue-700"><a href="">Overview</a></li>
+            <li class="py-1 hover:underline hover:text-blue-700"><a href="">Balance</a></li>
+            <li class="py-1 hover:underline hover:text-blue-700"><a href="">Transtions</a></li>
+            <li class="py-1 hover:underline hover:text-blue-700"><a href="">Profile</a></li>
+            <li class="py-1 hover:underline hover:text-blue-700"><a href="">Settings</a></li>
+        </ul>
+    </header>
+    <main class="max-h-screen w-9/12 p-10 bg-gray-100">
+        <section>
+            <h2 class="text-2xl font-medium oswald">Hello, there</h2>
+        </section>
+        <!-- Balence Section -->
+        <section class="mt-6 grid grid-cols-3 gap-8">
+            <div class="total-balence-container px-6 py-6 bg-white rounded">
+                <h4 class="text-2xl font-medium pb-3">Total Balence</h4>
+                <h2 class="text-5xl font-bold">$<span>257</span></h2>
+            </div>
+            <div class="total-balence-container px-6 py-6 bg-white rounded">
+                <h4 class="text-2xl font-medium pb-3">Deposit</h4>
+                <h2 class="text-5xl font-bold">$<span>00</span></h2>
+            </div>
+            <div class="total-balence-container px-6 py-6 bg-white rounded">
+                <h4 class="text-2xl font-medium pb-3">Withdraw</h4>
+                <h2 class="text-5xl font-bold">$<span>00</span></h2>
+            </div>
+        </section>
+        <!-- Deposit & Withdraw input Section -->
+        <section class="grid grid-cols-2 gap-8 mt-8">
+            <div class="bg-blue-400 rounded px-8 py-8">
+                <h2 class="text-white font-medium text-xl">Please Deposit</h2>
+                <input class="px-4 py-2 rounded block w-full my-3" type="text" placeholder="$ 00">
+                <button class="bg-slate-700 py-2 px-8 text-white text-lg rounded hover:bg-black">Submit</button>
+            </div>
+            <div class="bg-blue-400 rounded px-8 py-8">
+                <h2 class="text-white font-medium text-xl">Please Withdraw</h2>
+                <input class="px-4 py-2 rounded block w-full my-3" type="text" placeholder="$ 00">
+                <button class="bg-slate-700 py-2 px-8 text-white text-lg rounded hover:bg-black">Submit</button>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div class="overflow-x-auto">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Job</th>
+                      <th>Favorite Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr class="bg-base-200">
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>Blue</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>Hart Hagerty</td>
+                      <td>Desktop Support Technician</td>
+                      <td>Purple</td>
+                    </tr>
+                
+                  </tbody>
+                </table>
+              </div>
+        </section>
+    </main>
 </body>
 </html>
