@@ -12,6 +12,8 @@
     <!-- Custom CSS file  -->
     <link rel="stylesheet" href="./styles/style.css">
 
+    <!-- Font Awosome -->
+    <script src="https://kit.fontawesome.com/b435c73b55.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="w-full">
@@ -19,7 +21,7 @@
         <section class="login-container">
             <div class="w-1/3 left-container">
                 <div class="grid justify-items-center my-20">
-                    <img class="w-64" src="./images/logo.svg" alt="">
+                    <h2 class="text-4xl font-bold"><i class="fa-solid fa-building-columns"></i> Online Bank</h2>
                 </div>
                 <div class="text-black w-64 mx-auto my-10">
                     <input id="email-field"
@@ -34,7 +36,7 @@
                         <a class="underline font-bold hover:text-blue-700" href="#" onclick="my_modal_3.showModal()">Sign up!</a>
                     </h4>
                     <!-- You can open the modal using ID.showModal() method -->
-                    <dialog id="my_modal_3" class="modal">
+                    <dialog id="my_modal_3" class="modal overflow-hidden">
                         <div class="modal-box">
                             <form method="dialog">
                                 <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -46,10 +48,10 @@
                     </dialog>
                 </div>
                 <div class="pt-32">
-                    <p class="align-bottom">&copy 2005-2024 Payoneer Inc.</p>
+                    <p class="align-bottom">&copy 2005-2024 OnlineBank Inc.</p>
                 </div>
             </div>
-            <div class="w-2/3 right-container p-12">
+            <div class="w-2/3 right-container overflow-hidden p-12">
                 <h2 class="text-black font-bold text-4xl">Welcome to Baap er Bank</h2>
             </div>
         </section>
